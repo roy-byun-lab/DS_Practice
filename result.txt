@@ -1,0 +1,67 @@
+kr
+Fold 1: 검증 오차 = 5603.79
+첫 번째 폴드에서 모델이 평균적으로 약 5603.79의 오차를 가지고 예측했음을 의미합니다.
+Fold 2: 검증 오차 = 1830.84
+두 번째 폴드에서는 약 1830.84의 오차가 발생했습니다. 이전보다 예측 성능이 개선된 것으로 보입니다.
+Fold 3: 검증 오차 = 1021.52
+세 번째 폴드에서는 약 1021.52의 검증 오차가 발생했습니다. 이는 더 나은 예측 성능을 보여줍니다.
+Fold 4: 검증 오차 = 1790.46
+네 번째 폴드에서는 약 1790.46의 오차가 발생했습니다. 폴드마다 오차가 다를 수 있으며, 이 폴드에서는 예측이 더 어려웠을 수 있습니다.
+Fold 5: 검증 오차 = 1754.01
+다섯 번째 폴드에서는 약 1754.01의 오차가 발생했습니다. 이전 폴드들과 비슷한 수준의 오차가 발생했음을 나타냅니다.
+
+오차를 줄이기 위해서는 몇 가지 접근 방식이 있습니다:
+
+더 많은 학습 반복: 현재 코드에서는 각 폴드에서 학습 반복을 에러가 0.01 이하가 될 때까지만 진행하고 있습니다. 더 많은 학습 반복을 허용하여 모델이 더 많이 개선되도록 할 수 있습니다.
+
+학습률 조정: ETA(학습률) 값을 조정하여 더 최적화된 값을 찾도록 합니다. 너무 큰 학습률은 수렴을 방해할 수 있고, 너무 작은 학습률은 수렴 속도를 늦출 수 있습니다.
+
+모델 복잡도 조정: 선형 모델의 경우, 추가적인 특성 변환이나 다른 모델(예: 다항 회귀)을 사용하여 모델의 복잡성을 높이고 성능을 개선할 수 있습니다.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+jp
+Fold 1: 検証エラー = 5603.79
+第1フォルドでは、モデルの平均エラーが約5603.79であり、予測性能を示しています。
+
+Fold 2: 検証エラー = 1830.84
+第2フォルドでは、約1830.84のエラーが発生しました。これは前のフォルドよりも予測性能が向上したことを示しています。
+
+Fold 3: 検証エラー = 1021.52
+第3フォルドでは、約1021.52の検証エラーが発生し、より良い予測性能を示しています。
+
+Fold 4: 検証エラー = 1790.46
+第4フォルドでは約1790.46のエラーが発生しました。各フォルドでエラーが異なることから、このフォルドではより困難な予測が行われた可能性があります。
+
+Fold 5: 検証エラー = 1754.01
+第5フォルドでは、約1754.01のエラーが発生しました。これは以前のフォルドと類似しています。
+
+エラーを減らすためには、いくつかのアプローチが考えられます：
+
+1. より多くの学習反復：現在のコードでは、各フォルドの学習反復がエラーが0.01未満になるまで制限されています。より多くの反復を許可することで、モデルの改善が期待できます。
+
+2. 学習率の調整：ETA（学習率）を調整することで、より最適な値を見つけることができます。学習率が高すぎると収束が妨げられる可能性があり、低すぎると収束速度が遅くなる可能性があります。
+
+3. モデルの複雑さの調整：線形モデルの場合、追加の特徴量変換や異なるモデル（例：多項式回帰）を使用することで、性能を向上させることができます。
+--------------------------------------------------------------------------------------------------------------------------------------------------
+en
+Fold 1: Validation error = 5603.79
+In the first fold, the model had an average error of approximately 5603.79, indicating its predictive performance.
+
+Fold 2: Validation error = 1830.84
+The second fold resulted in an error of around 1830.84. This suggests an improvement in predictive performance compared to the previous fold.
+
+Fold 3: Validation error = 1021.52
+In the third fold, a validation error of about 1021.52 occurred, indicating better predictive performance.
+
+Fold 4: Validation error = 1790.46
+The fourth fold showed an error of approximately 1790.46. Errors can vary between folds, suggesting more challenging predictions in this fold.
+
+Fold 5: Validation error = 1754.01
+In the fifth fold, an error of about 1754.01 occurred, similar to previous folds.
+
+To reduce the error, several approaches can be considered:
+
+1. More training iterations: The current code limits each fold's training iterations until the error is below 0.01. Allowing more iterations can further improve the model.
+
+2. Adjusting the learning rate: Modifying ETA (learning rate) helps in finding an optimal value. A too high learning rate can hinder convergence, while too low can slow down the convergence speed.
+
+3. Adjusting model complexity: For linear models, increasing complexity through additional feature transformations or using different models (e.g., polynomial regression) can enhance performance.
